@@ -68,5 +68,4 @@ angular.module('flapperNews', ['ui.router'])
             post.upvotes += 1;
         };
     }
-
 ]);
