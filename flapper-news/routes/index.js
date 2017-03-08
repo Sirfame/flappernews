@@ -83,6 +83,10 @@ router.post('/posts/:post/comments', function(req, res, next) {
     });
 });
 
+router.get('/posts/:post/comments/:comment', function(req, res, next) {
+    res.json(req.comment);
+});
+
 router.param('comment', function(req, res, next, id) {
     var query = Comment.findById(id);
 
